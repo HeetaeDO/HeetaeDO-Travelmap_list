@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_b109ba96d6eab4c6e87660e051c049a0 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_b109ba96d6eab4c6e87660e051c049a0" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_b109ba96d6eab4c6e87660e051c049a0 = L.map(
+                "map_b109ba96d6eab4c6e87660e051c049a0",
+                {
+                    center: [46.5, 10.5],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_389d163b5c8eea74675eb9258e9a97ed = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_b109ba96d6eab4c6e87660e051c049a0);
+        
+    
+            var marker_995f49e74fb56d305f1af7dd71a9cb30 = L.marker(
+                [41.9028, 12.4964],
+                {}
+            ).addTo(map_b109ba96d6eab4c6e87660e051c049a0);
+        
+    
+            var icon_f110505abec398f19b2c8b4d71bba9a2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_995f49e74fb56d305f1af7dd71a9cb30.setIcon(icon_f110505abec398f19b2c8b4d71bba9a2);
+        
+    
+        var popup_2277910dd470d7b7106e55b6523800bc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_871bdd585e21943633e00bbf4144ac23 = $(`<div id="html_871bdd585e21943633e00bbf4144ac23" style="width: 100.0%; height: 100.0%;">Rome, Italy</div>`)[0];
+            popup_2277910dd470d7b7106e55b6523800bc.setContent(html_871bdd585e21943633e00bbf4144ac23);
+        
+
+        marker_995f49e74fb56d305f1af7dd71a9cb30.bindPopup(popup_2277910dd470d7b7106e55b6523800bc)
+        ;
+
+        
+    
+    
+            marker_995f49e74fb56d305f1af7dd71a9cb30.bindTooltip(
+                `<div>
+                     Rome, Italy
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c0b4150a9bd2e37098d025f2767bb705 = L.marker(
+                [43.7696, 11.2558],
+                {}
+            ).addTo(map_b109ba96d6eab4c6e87660e051c049a0);
+        
+    
+            var icon_ba1202ab9ef8a5aca427981416c2410e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c0b4150a9bd2e37098d025f2767bb705.setIcon(icon_ba1202ab9ef8a5aca427981416c2410e);
+        
+    
+        var popup_830f4f9ba8111130390cf32df917f9cf = L.popup({"maxWidth": "100%"});
+
+        
+            var html_03a8dd3f0e1161bb0265b5e073d2e37f = $(`<div id="html_03a8dd3f0e1161bb0265b5e073d2e37f" style="width: 100.0%; height: 100.0%;">Florence, Italy</div>`)[0];
+            popup_830f4f9ba8111130390cf32df917f9cf.setContent(html_03a8dd3f0e1161bb0265b5e073d2e37f);
+        
+
+        marker_c0b4150a9bd2e37098d025f2767bb705.bindPopup(popup_830f4f9ba8111130390cf32df917f9cf)
+        ;
+
+        
+    
+    
+            marker_c0b4150a9bd2e37098d025f2767bb705.bindTooltip(
+                `<div>
+                     Florence, Italy
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ab09eb160bcfe271f935ca566c439b46 = L.marker(
+                [45.4408, 12.3155],
+                {}
+            ).addTo(map_b109ba96d6eab4c6e87660e051c049a0);
+        
+    
+            var icon_8edb55eeba0c0068fdf95c7b06d471f9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ab09eb160bcfe271f935ca566c439b46.setIcon(icon_8edb55eeba0c0068fdf95c7b06d471f9);
+        
+    
+        var popup_26b65d251c7ca65684edd27185e74e9d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a57d71857c37fedc82232baa2c8a30e3 = $(`<div id="html_a57d71857c37fedc82232baa2c8a30e3" style="width: 100.0%; height: 100.0%;">Venice, Italy</div>`)[0];
+            popup_26b65d251c7ca65684edd27185e74e9d.setContent(html_a57d71857c37fedc82232baa2c8a30e3);
+        
+
+        marker_ab09eb160bcfe271f935ca566c439b46.bindPopup(popup_26b65d251c7ca65684edd27185e74e9d)
+        ;
+
+        
+    
+    
+            marker_ab09eb160bcfe271f935ca566c439b46.bindTooltip(
+                `<div>
+                     Venice, Italy
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_04eea8cd10f979d11197036ce7746a77 = L.marker(
+                [45.4642, 9.19],
+                {}
+            ).addTo(map_b109ba96d6eab4c6e87660e051c049a0);
+        
+    
+            var icon_c69d72d3c8f9e7a0ed7bc18eefe85342 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_04eea8cd10f979d11197036ce7746a77.setIcon(icon_c69d72d3c8f9e7a0ed7bc18eefe85342);
+        
+    
+        var popup_e5d1ef9a360f4225f9d5713279e1af83 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c34ddaf744236f9e56019faad9bbe734 = $(`<div id="html_c34ddaf744236f9e56019faad9bbe734" style="width: 100.0%; height: 100.0%;">Milan, Italy</div>`)[0];
+            popup_e5d1ef9a360f4225f9d5713279e1af83.setContent(html_c34ddaf744236f9e56019faad9bbe734);
+        
+
+        marker_04eea8cd10f979d11197036ce7746a77.bindPopup(popup_e5d1ef9a360f4225f9d5713279e1af83)
+        ;
+
+        
+    
+    
+            marker_04eea8cd10f979d11197036ce7746a77.bindTooltip(
+                `<div>
+                     Milan, Italy
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ea56990db4ca2685322cf280c3aae073 = L.marker(
+                [43.0706, 12.6197],
+                {}
+            ).addTo(map_b109ba96d6eab4c6e87660e051c049a0);
+        
+    
+            var icon_65f3e1793edf66898ab62686e6d30247 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ea56990db4ca2685322cf280c3aae073.setIcon(icon_65f3e1793edf66898ab62686e6d30247);
+        
+    
+        var popup_8965c3e0c82aedf6d458901f237807af = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2784cfd62efdf02ba7b74a7fb31f80b5 = $(`<div id="html_2784cfd62efdf02ba7b74a7fb31f80b5" style="width: 100.0%; height: 100.0%;">Assisi, Italy</div>`)[0];
+            popup_8965c3e0c82aedf6d458901f237807af.setContent(html_2784cfd62efdf02ba7b74a7fb31f80b5);
+        
+
+        marker_ea56990db4ca2685322cf280c3aae073.bindPopup(popup_8965c3e0c82aedf6d458901f237807af)
+        ;
+
+        
+    
+    
+            marker_ea56990db4ca2685322cf280c3aae073.bindTooltip(
+                `<div>
+                     Assisi, Italy
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d95f57e44d2deca59a2c68f6405c2488 = L.marker(
+                [44.1002, 9.7376],
+                {}
+            ).addTo(map_b109ba96d6eab4c6e87660e051c049a0);
+        
+    
+            var icon_e427696d34e27fb0ae1ebf1399f39a3c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d95f57e44d2deca59a2c68f6405c2488.setIcon(icon_e427696d34e27fb0ae1ebf1399f39a3c);
+        
+    
+        var popup_8a555334299e532998df4b7d35360690 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a143d575c7ed568b7fc5ad2cc4947a8b = $(`<div id="html_a143d575c7ed568b7fc5ad2cc4947a8b" style="width: 100.0%; height: 100.0%;">Riomaggiore, Italy</div>`)[0];
+            popup_8a555334299e532998df4b7d35360690.setContent(html_a143d575c7ed568b7fc5ad2cc4947a8b);
+        
+
+        marker_d95f57e44d2deca59a2c68f6405c2488.bindPopup(popup_8a555334299e532998df4b7d35360690)
+        ;
+
+        
+    
+    
+            marker_d95f57e44d2deca59a2c68f6405c2488.bindTooltip(
+                `<div>
+                     Riomaggiore, Italy
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
